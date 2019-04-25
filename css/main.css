@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,700");
+body {
+  font-family: 'Work sans';
+  color: #ff0000;
+  background-color: #fff9f9;
+  max-width: 960px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 48px 0;
+}
+
+span {
+  margin: 0 8px;
+}
+
+circle {
+  fill: #ff0000;
+  stroke: #fff9f9;
+  stroke-width: 3px;
+}
+
+line {
+  stroke-width: 1px;
+  stroke-dasharray: 2 8;
+}
+
+path.domain {
+  stroke-width: 3px;
+}
+
+text.x-axis,
+text.y-axis {
+  fill: #ff0000;
+  font-size: 24px;
+  text-anchor: middle;
+  dominant-baseline: middle;
+}
+
+g.city rect {
+  fill: #ff0000;
+  opacity: 0;
+  -webkit-transition: .25s opacity;
+  transition: .25s opacity;
+}
+
+g.city text {
+  fill: #fff9f9;
+  text-anchor: middle;
+  font-size: 14px;
+  opacity: 0;
+  -webkit-transition: .25s opacity;
+  transition: .25s opacity;
+}
+
+g.city:hover text,
+g.city:hover rect {
+  opacity: 1;
+  -webkit-transition: 0.1s opacity;
+  transition: 0.1s opacity;
+}
+
+@media (max-width: 1000px) {
+  body {
+    margin: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 70vh;
+  }
+  span {
+    display: block;
+    margin: 10px 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,700');
+
+$primary-color: #ff0000;
+$background-color: #fff9f9;
+
+body {
+    font-family: 'Work sans';
+    color: $primary-color;
+
+    background-color: $background-color;
+    max-width: 960px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+h1 {
+    margin: 0 0 48px 0;
+}
+
+span {
+    margin: 0 8px;
+}
+
+circle {
+    fill: $primary-color;
+    stroke: $background-color;
+    stroke-width: 3px;
+}
+
+line {
+    stroke-width: 1px;
+    stroke-dasharray: 2 8;
+}
+
+path.domain {
+    stroke-width: 3px;
+}
+
+text.x-axis, 
+text.y-axis {
+    fill: $primary-color;
+    font-size: 24px;
+    text-anchor: middle;
+    dominant-baseline: middle;
+}
+
+g.city rect {
+    fill: $primary-color;
+    opacity: 0;
+    transition: .25s opacity;
+}
+
+g.city text {
+    fill: $background-color;
+    text-anchor: middle;
+    font-size: 14px;
+    opacity: 0;
+    transition: .25s opacity;
+}
+
+g.city:hover text,
+g.city:hover rect {
+    opacity: 1;
+    transition: 0.1s opacity;
+}
+
+@media (max-width: 1000px) {
+    body {
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 70vh;
+    }
+    span {
+        display: block;
+        margin: 10px 0;
+    }
+    
+}
